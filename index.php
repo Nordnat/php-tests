@@ -11,10 +11,17 @@
 
 <?php
 include ('Classes/SecondTestClass.php');
+include ('Classes/Part.php');
 use Classes\SecondTestClass;
+use Classes\Part;
 $protection = new SecondTestClass();
+$test_object = (array) new Part( 123123, 'klocki', 1231, 'Honda');
 ?>
+<pre>
+    <?php var_dump($test_object); ?>
+</pre>
 <h1><?php echo $protection->getAttribute();  ?></h1>
+<!--<h1>--><?php //$test_object;  ?><!--</h1>-->
 
 </body>
 </html>
